@@ -234,5 +234,10 @@ Pod::Spec.new do |s|
     comments.resources = 'Comment/Comment.bundle'
   end
 
+  s.subspec 'Whatsapp' do |wts|
+    tts.requires_arc = true
+    tts.dependency 'ShareSDK/Core'
+    tts.vendored_frameworks = 'ShareSDK/Connection/WhatsAppConnection.framework'
+  end
 
 end
