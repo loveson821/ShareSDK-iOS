@@ -235,9 +235,9 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'Whatsapp' do |wts|
-    tts.requires_arc = true
-    tts.dependency 'ShareSDK/Core'
-    tts.vendored_frameworks = 'ShareSDK/Connection/WhatsAppConnection.framework'
+    wts.requires_arc = true
+    wts.dependency 'ShareSDK/Core'
+    wts.vendored_frameworks = 'ShareSDK/Connection/WhatsAppConnection.framework'
   end
 
 end
